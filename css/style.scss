@@ -1,7 +1,21 @@
+@mixin max-screen($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+$main_font: "Roboto", sans-serif;
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: $main_font;
+}
 header {
     .soc_header {
         list-style: none;
         align-items: flex-start;
+
         li {
             &:first-of-type {
                 margin-right: 15px;
@@ -25,14 +39,116 @@ header {
 .container {
     max-width: 1064px;
 }
+.nav-item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1c1b1b;
+    font-style: $main_font;
+    .nav-link {
+        color: #1c1b1b;
+    }
+}
+.collapse,
+.navbar-collapse {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: #1c1b1b;
+            }
+        }
+    }
+}
 
 .main_banner {
     background-color: #f0efeb;
     padding: 90px 0;
     h1 {
         margin-bottom: 42px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        color: #000000;
     }
     p {
         margin-bottom: 42px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
     }
+    .btn .btn-dark {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+}
+.banner_img {
+    @include max-screen(768px) {
+        right: 0;
+        width: 100%;
+        display: block;
+    }
+}
+.best_sellers {
+    .container {
+        h2 {
+            margin-top: 60px;
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            color: #000000;
+        }
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+    .title_bt {
+        margin-bottom: 52px;
+    }
+    .card {
+        border: none;
+        h5 {
+            font-style: $main_font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+        }
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+        }
+        a {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #000000;
+        }
+    }
+}
+.people_and {
+    background-color: rgba(204, 204, 204, 0.3);
 }

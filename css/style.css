@@ -1,3 +1,11 @@
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
 header .soc_header {
   list-style: none;
   align-items: flex-start;
@@ -23,13 +31,111 @@ header .navbar-brand {
   max-width: 1064px;
 }
 
+.nav-item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1c1b1b;
+  font-style: "Roboto", sans-serif;
+}
+.nav-item .nav-link {
+  color: #1c1b1b;
+}
+
+.collapse .navbar-nav .nav-item .nav-link,
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #1c1b1b;
+}
+
 .main_banner {
   background-color: #f0efeb;
   padding: 90px 0;
 }
 .main_banner h1 {
   margin-bottom: 42px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #000000;
 }
 .main_banner p {
   margin-bottom: 42px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.main_banner .btn .btn-dark {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .banner_img {
+    right: 0;
+    width: 100%;
+    display: block;
+  }
+}
+
+.best_sellers .container h2 {
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+.best_sellers .container p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.best_sellers .title_bt {
+  margin-bottom: 52px;
+}
+.best_sellers .card {
+  border: none;
+}
+.best_sellers .card h5 {
+  font-style: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+.best_sellers .card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+.best_sellers .card a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+}
+
+.people_and {
+  background-color: rgba(204, 204, 204, 0.3);
 }/*# sourceMappingURL=style.css.map */
